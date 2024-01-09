@@ -1,0 +1,65 @@
+/* header css start   */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_left{
+    display: flex;
+    
+    align-items: center;
+}
+.menu_icon{
+    height: 3rem !important;
+    margin-right: 2.3rem;
+    cursor: pointer;
+}
+.logo{
+    width : 10rem;
+}
+
+.header_middle{
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+.search_input{
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    justify-content: center;
+    padding: .7rem 1.1rem;
+    border: 2px solid #CFCFCF;
+    border-radius: 5rem;
+}
+.search_input>input{
+    flex:1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.search_icon{
+    position: relative;
+}
+
+.header_icons{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.icon{
+    scale: 1.7 ;
+    cursor: pointer;
+}
+
+/* header css end  */
