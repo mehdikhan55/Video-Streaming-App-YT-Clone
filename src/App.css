@@ -138,7 +138,6 @@
     flex: 0.8;
     padding: 2rem 1rem;
     padding-left: 3rem;
-    /* border: 2px solid red; */
     align-self: flex-start;
     background-color: #f9f9f9;
 
@@ -147,6 +146,9 @@
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+ 
 }
 .videoCard{
     width: 35rem;
@@ -175,3 +177,87 @@
 
 
 /* App Page Ends  */
+
+
+/* Search Page Starts  */
+
+.searchPage{
+    flex: 0.8;
+    /* border:2px solid red; */
+    background-color: #f9f9f9;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.searchPage_filter{
+    display: flex;
+    align-items: center;
+    color: #606060;
+    font-size: xx-small !important;
+    margin-bottom: 1rem;
+}
+.searchPage_filter>h2{
+    margin-left: 1rem;
+}
+
+.channelRow{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.channelRow_text{
+    display: flex;
+    flex-direction: column;
+}
+.channelRow_text>p{
+    font-size: small !important;
+    color: gray;
+}
+.channelRow_logo{
+    height: 12rem !important;
+    width: 12rem !important;
+    margin: 1rem 6rem;
+}
+
+
+.videoRow{
+    width: 100%;
+    display: flex;
+    margin-bottom: 3rem;
+    max-width: 100rem;
+    /* background-color: red; */
+}
+.videoRow>img{
+    object-fit: cover;
+    /* width: 24.6rem; */
+    width:40%;
+    height: 20rem;
+}
+.videoRow_text{
+    margin-left: 1.4rem;
+}
+.videoRow_description{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #606060;
+}
+.videoRow_headline{
+    font-size: 1.2rem;
+    color: #606060;
+}
+.videoRow_subs{
+    background-color: lightgray;
+    padding:0.2rem;
+}
+.videoRow_subsNumber{
+    font-weight: bolder;
+    color: rgb(84, 157, 211);
+}
+
+
+.searchPage>hr{
+    margin: 2rem 0;
+}
+/* Search Page Ends  */

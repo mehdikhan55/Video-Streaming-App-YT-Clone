@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Video from './pages/Video';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
@@ -16,12 +17,12 @@ function App() {
           <Routes>
             <Route path="/" >
               <Route index element={<Home/>}/>
+              <Route path="Search/:searchTerm" element={<SearchPage/>} />
               <Route path="video">
                 <Route path=":videoId" element={<Video/>}/>
               </Route>
             </Route>
           </Routes>
-          <Home />
         </main>
       </BrowserRouter>
     </div>
