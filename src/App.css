@@ -1,36 +1,40 @@
 /* header css start   */
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: white;
 }
 
-.header_left{
+.header_left {
     display: flex;
-    
+
     align-items: center;
 }
-.menu_icon{
+
+.menu_icon {
     height: 3rem !important;
     margin-right: 2.3rem;
     cursor: pointer;
 }
-.logo{
-    width : 10rem;
+
+.logo {
+    width: 10rem;
 }
 
-.header_middle{
+.header_middle {
     display: flex;
     column-gap: 2rem;
     align-items: center;
     justify-content: center;
     width: 40%;
 }
-.search_input{
+
+.search_input {
     display: flex;
     gap: .8rem;
     align-items: center;
@@ -41,25 +45,133 @@
     border: 2px solid #CFCFCF;
     border-radius: 5rem;
 }
-.search_input>input{
-    flex:1;
+
+.search_input>input {
+    flex: 1;
     border: none;
     outline: none;
     background-color: transparent;
 }
-.search_icon{
+
+.search_icon {
     position: relative;
 }
 
-.header_icons{
+.header_icons {
     display: flex;
     align-items: center;
     column-gap: 3rem;
 }
 
-.icon{
-    scale: 1.7 ;
+.icon {
+    scale: 1.7;
     cursor: pointer;
 }
 
 /* header css end  */
+
+
+
+
+/* Main Page starts  */
+.main_page {
+    display: flex;
+}
+
+/* Sidebar Starts  */
+
+.sidebar {
+    align-self: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    position: sticky;
+    top:5.9rem ;
+    overflow-y: scroll;  
+    overflow-x: hidden;  
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sidebar_main_title {
+    padding: .2rem 2rem;
+    font-weight: 600;
+}
+
+.sidebar_row {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.sidebar_icon {
+    color: #606060;
+    font-size: large !important;
+}
+
+.sidebar_title {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.sidebar_row:hover {
+    background-color: lightgray;
+}
+
+.sidebar_row:hover>.sidebar_icon {
+    color: black;
+}
+
+.sidebar>hr {
+    margin-block: 1rem;
+}
+
+/* Sidebar Ends  */
+
+
+/* Main Video Section Starts  */
+.main_video_section {
+    flex: 0.8;
+    padding: 2rem 1rem;
+    padding-left: 3rem;
+    /* border: 2px solid red; */
+    align-self: flex-start;
+    background-color: #f9f9f9;
+
+}
+.videos_box{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.videoCard{
+    width: 35rem;
+}
+.thumbnail_img{
+    object-fit: cover;
+    width: 100%;    
+    aspect-ratio: 16/9;
+    border-radius: 1.5rem;
+}
+.video_info{
+    display: flex;
+    column-gap: 1.4rem;
+    margin-top: 1rem;
+}
+.video_text>h4{
+    font-size: 1.6rem;
+}
+.video_text>p{
+    font-size: 1.6rem;
+    color: gray;
+}
+
+/* Main Video Section Ends  */
+
+
+
+/* App Page Ends  */
