@@ -129,7 +129,30 @@
 .sidebar>hr {
     margin-block: 1rem;
 }
-
+.loginBtnContSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* margin-top: 1rem; */
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+}
+.loginBtnSide{
+    border: none;
+    align-self: center;
+    margin-top: 1rem;
+    color:#065fd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    margin-right: 8rem;
+    cursor: pointer;
+}
+.loginBtnAccountIcon{
+    font-size: 2rem !important;
+}
 /* Sidebar Ends  */
 
 
@@ -261,3 +284,129 @@
     margin: 2rem 0;
 }
 /* Search Page Ends  */
+
+
+/* Single Video Page Starts   */
+
+.video_page_container{
+    flex: 1;
+    display: flex;
+    gap:2rem;
+    align-self: flex-start;
+    /* background-color: red; */
+}
+.video_page_content{
+    flex: 5;
+    padding-left: 1rem;
+    /* background-color: red; */
+}
+
+.video_wrapper{
+    
+}
+.video_title{
+    font-size:1.8rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    margin-bottom: .2rem;
+}
+.video_details{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+.video_info{
+    color: gray;
+}
+.btns{
+    display: flex;
+    gap: 2rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+    color: black;
+    cursor: pointer;
+}
+.video_page_content>hr{
+    margin: 1.5rem 0rem;
+    border: 1.5px solid lightgray;
+}
+.video_page_channel{
+    display: flex;
+    justify-content: space-between;
+}
+.channel_info{
+    display: flex;
+    gap: 2rem;
+}
+.channel_details{
+    display: flex;
+    flex-direction: column;
+    color: #212121
+}
+.channel_name{
+    color:black;
+    font-weight: 500;
+}
+.channel_counter{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 1.2rem ;
+}
+.vid_description{
+    font-size: 1.4rem;
+}
+.subscribe{
+    background-color: #cc1a00;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    height: max-content;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+/* Single Video Page Ends   */
+
+
+/* Recommendation Section Starts  */
+.recommendations{
+    flex:2.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 1rem;
+}
+.recommendationCard{
+    width: 35rem;
+    display: flex;
+    align-items: flex-start;
+    justify-self: flex-start;
+    gap: 1rem;
+}
+.recom_thumbnail_img{
+    object-fit: cover;
+    width: 50%;    
+    aspect-ratio: 16/9;
+    /* border-radius: 1.5rem; */
+}
+.recom_info{
+    display: flex;
+    column-gap: 1.4rem;
+}
+.recom_text>h4{
+    font-size: 1.4rem;
+}
+.recom_text>p{
+    font-size: 1.2rem;
+    color: gray;
+}
+/* Recommendation Section Ends  */
+
+/* Sign in Page Starts  */
+
+
+/* Sign in Page Ends  */

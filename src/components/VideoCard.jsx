@@ -1,11 +1,13 @@
 import { Avatar } from '@mui/material';
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function VideoCard(props) {
 
     const { image, title, channel, views, timestamp, channelImage } = props;
 
     return (
+        <Link to="/video/test" style={{textDecoration:"none", color:"black"}}>
         <div className='videoCard'>
             <img src={image} alt="" className='thumbnail_img'/>
             <div className="video_info">
@@ -17,5 +19,6 @@ export default function VideoCard(props) {
                 </div>
             </div>
         </div>
+        </Link>
     )
 }

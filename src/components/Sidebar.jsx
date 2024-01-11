@@ -1,6 +1,6 @@
 import React from 'react'
 import SidebarRow from './SidebarRow'
-import { Home, WhatshotSharp, AccountBoxOutlined,HistorySharp,SlideshowOutlined,QueryBuilder,MusicNote,SportsEsports,Newspaper,EmojiEvents } from '@mui/icons-material'
+import { Home, WhatshotSharp, AccountBoxOutlined,HistorySharp,SlideshowOutlined,QueryBuilder,MusicNote,SportsEsports,Newspaper,EmojiEvents,AccountCircleOutlined } from '@mui/icons-material'
 import { SubscriptionsOutlined } from '@mui/icons-material'
 
 
@@ -15,6 +15,12 @@ export default function Sidebar() {
         <SidebarRow Icon={HistorySharp} title="History"/>
         <SidebarRow Icon={SlideshowOutlined} title="Your Videos"/>
         <SidebarRow Icon={QueryBuilder} title="Watch Later"/>
+
+        <div className="loginBtnContSide">
+          <p>Sign in to like videos, comment,<br/> and subscribe.</p>
+          <button className="loginBtnSide"><AccountCircleOutlined className='loginBtnAccountIcon'/><span>Sign in</span></button>
+        </div>
+
         <hr />
         <h3 className='sidebar_main_title'>Explore</h3>
         <SidebarRow Icon={MusicNote} title="Music"/>
