@@ -1,0 +1,18 @@
+/* globalStyles.css */
+
+:root {
+
+    --bg-dark: #181818;
+    --bg-lighter-dark: #202020;
+    --text-dark: white;
+    --text-soft-dark: #aaaaaa;
+    --soft-dark:#373737;
+
+    --bg-light: #f9f9f9;
+    --bg-lighter-light: white;
+    --text-light: black;
+    --text-soft-light: #606060;
+    --soft-light:#f5f5f5;
+
+  }
+  

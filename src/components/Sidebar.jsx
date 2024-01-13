@@ -1,10 +1,14 @@
 import React from 'react'
 import SidebarRow from './SidebarRow'
-import { Home, WhatshotSharp, AccountBoxOutlined,HistorySharp,SlideshowOutlined,QueryBuilder,MusicNote,SportsEsports,Newspaper,EmojiEvents,AccountCircleOutlined } from '@mui/icons-material'
+import { Home, WhatshotSharp, AccountBoxOutlined,HistorySharp,SlideshowOutlined,QueryBuilder,MusicNote,SportsEsports,Newspaper,EmojiEvents,AccountCircleOutlined , SettingsBrightnessOutlined} from '@mui/icons-material'
 import { SubscriptionsOutlined } from '@mui/icons-material'
+import { useTheme } from '../utils/ThemeContext'
 
 
 export default function Sidebar() {
+
+  const {theme, toggleTheme} = useTheme();
+
   return (
     <aside className='sidebar'>
         <SidebarRow Icon={Home} title="Home"/>
@@ -15,6 +19,9 @@ export default function Sidebar() {
         <SidebarRow Icon={HistorySharp} title="History"/>
         <SidebarRow Icon={SlideshowOutlined} title="Your Videos"/>
         <SidebarRow Icon={QueryBuilder} title="Watch Later"/>
+        <div onClick={toggleTheme}>
+        <SidebarRow Icon={SettingsBrightnessOutlined} title={`${theme==='light'?'Dark':'Light'} mode`}/>
+        </div>
 
         <div className="loginBtnContSide">
           <p>Sign in to like videos, comment,<br/> and subscribe.</p>

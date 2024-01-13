@@ -1,5 +1,6 @@
 /* header css start   */
 
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -9,10 +10,12 @@
     z-index: 100;
     background-color: white;
 }
+[data-theme='dark'] .header{
+    background-color: var(--primary-bg-dark );
+}
 
 .header_left {
     display: flex;
-
     align-items: center;
 }
 
@@ -135,7 +138,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     /* margin-top: 1rem; */
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem 3rem;
 }
 .loginBtnSide{
@@ -149,9 +152,13 @@
     gap: .4rem;
     margin-right: 8rem;
     cursor: pointer;
+    width: 100%;
+}
+.loginBtnSide>span{
+    font-size: 1.2rem;
 }
 .loginBtnAccountIcon{
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
 }
 /* Sidebar Ends  */
 
@@ -174,7 +181,7 @@
  
 }
 .videoCard{
-    width: 35rem;
+    width: 32rem;
 }
 .thumbnail_img{
     object-fit: cover;
