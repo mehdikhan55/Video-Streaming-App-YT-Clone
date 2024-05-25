@@ -1,8 +1,7 @@
-# React + Vite
+# Video Streaming App - Youtube Clone 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- YouTube UI Clone using React JS
+- <a href="https://metube-seven.vercel.app/">Live Preview</a>
 
-Currently, two official plugins are available:
+<p>(Not fully optimized for mobile yet)</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
